@@ -1,0 +1,7 @@
+style.css
+
+body {
+    background-color: blue;  /* Sininen tausta */
+    color: white;             /* Teksti valkoiseksi, jotta näkyy */
+    font-family: Arial, sans-serif;
+}
