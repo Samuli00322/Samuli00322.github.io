@@ -1,7 +1,43 @@
-style.css
-
-body {
-    background-color: blue;  /* Sininen tausta */
-    color: white;             /* Teksti valkoiseksi, jotta näkyy */
-    font-family: Arial, sans-serif;
-}
+table {
+      width: 1%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #9fe915;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f50303;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 1px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
