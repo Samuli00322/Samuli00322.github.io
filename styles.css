@@ -4,13 +4,13 @@ table {
     }
     
     th, td {
-      border: 1px solid #9fe915;
+      border: 1px solid #fa0505;
       padding: 8px;
       text-align: left;
     }
     
     th {
-      background-color: #f50303;
+      background-color: #e5f503;
     }
     
     form {
@@ -30,7 +30,7 @@ table {
     }
     
     input[type="submit"] {
-      background-color: #4CAF50;
+      background-color: #3a3f1d;
       color: white;
       padding: 1px;
       border: none;
