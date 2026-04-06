@@ -8,9 +8,39 @@ git push-->
         <link rel="stylesheet" href="styles.css">
         <title>Sam</title>
         <style>
-            /* HTML sivun style osiossa pitää kommentoida CSS syntaksin mukaan. */
+             /* Tämä on CSS animaatio */
+             /*img {
+             filter: grayscale(100%);
+             }*/
+             
+            a {
+            color: blue;
+            text-decoration: none;
+            transition: 0.3s;
+            }
+
+            a:hover {
+            color: darkorange;
+            text-decoration: underline;
+            }
+
+            .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: colorChange 1s ease-in-out 1s infinite alternate;
+    }
+    @keyframes colorChange {
+      from { background-color: rgb(7, 61, 238); }
+      to { background-color: yellow; }
+    }
             
-            #para1 {
+            
+            
+            
+            
+        
+        #para1 {
                 color: sandybrown;
             }
             p { text-align: center;
@@ -27,8 +57,8 @@ git push-->
     </head>
     
     <body>
-        
-     
+        <div class="box"></div>
+         
         <h1 style="background-color: rgb(238, 241, 6);">Tervetuloa nettisivuilleni!
         </h1>
 
