@@ -38,5 +38,55 @@ body::before {
     label {
       font-weight: bold;
     }
+
+   .marquee {
+  width: 100%;
+  overflow: hidden;      /* Piilottaa ulkopuolelle menevän tekstin */
+  white-space: nowrap;   /* Estää rivinvaihdon */
+}
+
+.marquee span {
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: yellow;
+  animation: scroll 8s linear infinite;
+}
+
+/* Animaatio */
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+
+
+.construction-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: repeating-linear-gradient(
+    45deg,
+    yellow,
+    yellow 20px,
+    black 20px,
+    black 40px
+  );
+}
+
+.top-bar {
+  top: 1px;
+}
+
+.bottom-bar {
+  top: 111px;
+}
     
     
