@@ -13,6 +13,7 @@ git push-->
              filter: grayscale(100%);
              }*/
              
+            
             a {
             color: blue;
             text-decoration: none;
@@ -32,16 +33,101 @@ git push-->
             font-size: 30px;
         }
         * {
-      color: rgb(4, 172, 108);
+      color: rgb(92, 241, 5);
     }
     h1 { text-align: center;}
     h1 {
       font-size: 4em; padding-bottom: 10%;
     }
+
+    .transition-button {
+        background-color: rgb(238, 241, 6);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+       position: absolute;
+       top: 50%;
+       left: 70%;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(4, 235, 16);
+       }
+
+      .animation-box {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(238, 241, 6);
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+
+      .pseudo-list li:nth-child(odd) {
+        background-color: rgb(227, 243, 7);
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: rgb(3, 7, 238);
+      }
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+
     </style>
     </head>
     
     <body>
+
+        <blockquote class="quote"style="position: absolute; top: 50%;left: 20%;">
+        Moi vaan.
+      </blockquote>
+
+        <ul class="pseudo-list" style="position: absolute; top: 50%;left: 60%;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+
+        <div class="animation-box"></div>
+        
+        <button style="color: blue;" class="transition-button">Hover me</button>
+        
         <div class="marquee">
             <span>Under Construction!!</span>
         </div>
@@ -49,23 +135,19 @@ git push-->
         <div class="construction-bar top-bar"></div>
 
         <div class="construction-bar bottom-bar"></div>
-
-        <div class="box"></div>
-
-        <div class="warning-light"></div>
-         
+        
         <h1 style="background-color: rgb(238, 241, 6);"
             style="color: black;">Tervetuloa nettisivuilleni!
         </h1>
 
-        <p style="margin-right: 10%;"> I'm learning HTML, CSS and Javascript. Updating this website as I progress.</p>
+        <p style="margin-right: 0%;"> I'm learning HTML, CSS and Javascript. Updating this website as I progress.</p>
 
         <form method="post" action="/submit" style="width: 200px;">
             <label for="name">Nimesi</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="email">Sähköposti</label>
             <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" style="color: blue;">
             
         </form>
         <a href="https://www.laurea.fi">Laurea AMK</a>
@@ -93,8 +175,9 @@ git push-->
             </tr>
         </table>
 
+        <img src="./images/pommilei.png" alt="Sample Image" class="filter-image" width="200"; style="background-color: black;">
         
-        <img src="images/kuvamina.JPEG" alt="Photo of Samuli Merenlaakso" width="200">
+        <img src="images/kuvamina.JPEG" alt="Photo of Samuli Merenlaakso" width="200" style="filter: sepia(100%);">
         
     </body>
 </html>
