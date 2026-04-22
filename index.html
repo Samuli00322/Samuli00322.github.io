@@ -8,10 +8,10 @@ git push-->
         <link rel="stylesheet" href="styles.css">
         <title>Sam</title>
         <style>
-             /* Tämä on CSS animaatio */
-             /*img {
+             
+             img {
              filter: grayscale(100%);
-             }*/
+             }
              
             
             a {
@@ -98,6 +98,8 @@ git push-->
         padding-left: 20px;
         font-style: italic;
       }
+
+      
       
       .quote::before {
         content: '“';
@@ -108,25 +110,61 @@ git push-->
         color: lightgray;
       }
 
+      .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+   max-width: 12px;
+  margin: 50px auto;
+}
+
+.grid-item {
+  background-color: rgb(235, 252, 6);
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-wrapper {
+  max-width: 1200px;
+  margin: 500px auto;  /* keskittää vain gridin */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(241, 218, 8);
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: rgb(13, 126, 231);
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: rgb(201, 40, 179);
+  }
+}
+
+
+
+
     </style>
     </head>
     
     <body>
-
-        <blockquote class="quote"style="position: absolute; top: 50%;left: 20%;">
-        Moi vaan.
-      </blockquote>
-
-        <ul class="pseudo-list" style="position: absolute; top: 50%;left: 60%;">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-      </ul>
-
-        <div class="animation-box"></div>
-        
-        <button style="color: blue;" class="transition-button">Hover me</button>
         
         <div class="marquee">
             <span>Under Construction!!</span>
@@ -135,29 +173,55 @@ git push-->
         <div class="construction-bar top-bar"></div>
 
         <div class="construction-bar bottom-bar"></div>
+
         
+        
+      <div class="flex-container">                      <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        </div>
+        
+      <div class="main">
+
+        <div class="grid-wrapper"></div>
+        <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        </div>
+
+        <div class="responsive-box">Resize the window to see the effect</div>
+        
+        <header>
         <h1 style="background-color: rgb(238, 241, 6);"
             style="color: black;">Tervetuloa nettisivuilleni!
         </h1>
+        <nav>
+            <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+     </nav>
+</header>
 
-        <p style="margin-right: 0%;"> I'm learning HTML, CSS and Javascript. Updating this website as I progress.</p>
+<main>
+  <section id="about">
+    <h2>About Me:</h2>
+    <h2>Student of Laurea university of applied sciences</h2>
+    <p>Tervetuloa nettisivuilleni!</p>
+    <p style="margin-right: 0%;"> I'm learning HTML, CSS and Javascript. Updating this website as I progress.</p>
+  </section>
+</main>
 
-        <form method="post" action="/submit" style="width: 200px;">
-            <label for="name">Nimesi</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Sähköposti</label>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit" style="color: blue;">
-            
-        </form>
+<footer>
+  <p>Copyright 2025</p>
+</footer>
         <a href="https://www.laurea.fi">Laurea AMK</a>
-        <ol>
-            <li id="para1">Yksi</li>
-            <li>Kaksi</li>
-            <li>Kolme</li>
-        </ol>
         
-
         <table>
             
             <tr>

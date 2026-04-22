@@ -6,9 +6,13 @@ table {
       border-collapse: collapse;
     }
 
+    
+
+
    body {
     background-color: black;
 }
+
 
 body::before {
     content: "";
@@ -20,7 +24,7 @@ body::before {
 }
     
     th, td {
-      border: 1px solid #fa0505;
+      border: 1px solid #ec0bce;
       padding: 8px;
       text-align: left;
     }
@@ -81,12 +85,44 @@ body::before {
   );
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: rgb(10, 169, 223);
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
 .top-bar {
   top: 1px;
 }
 
 .bottom-bar {
   top: 111px;
+}
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
 }
     
     
