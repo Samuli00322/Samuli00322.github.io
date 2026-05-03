@@ -158,13 +158,77 @@ git push-->
   }
 }
 
+.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }
 
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
 
+    .media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: lightblue;
+      }
+    }
+
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
 
     </style>
     </head>
     
     <body>
+
+      <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+      <div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
         
         <div class="marquee">
             <span>Under Construction!!</span>
@@ -173,6 +237,8 @@ git push-->
         <div class="construction-bar top-bar"></div>
 
         <div class="construction-bar bottom-bar"></div>
+
+        <div class="media-query-box">Resize the window to see the effect</div>
 
         
         
@@ -238,6 +304,8 @@ git push-->
                 
             </tr>
         </table>
+
+        <img src="\images\pommi.jpg" alt="Responsive Image" class="responsive-image">
 
         <img src="./images/pommilei.png" alt="Sample Image" class="filter-image" width="200"; style="background-color: black;">
         
