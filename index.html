@@ -1,315 +1,150 @@
 <!DOCTYPE html>
 
-<!---Näin päivitetään github: git add .
-git commit -m 
-git push-->
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Sam</title>
-        <style>
-             
-             img {
-             filter: grayscale(100%);
-             }
-             
-            
-            a {
-            color: blue;
-            text-decoration: none;
-            transition: 0.3s;
-            }
+<!-- Näin päivitetään github:
+git add .
+git commit -m "päivitys"
+git push
+-->
 
-            a:hover {
-            color: darkorange;
-            text-decoration: underline;
-            }
-            
-            
-            #para1 {
-                color: sandybrown;
-            }
-            p { text-align: center;
-            font-size: 30px;
+<html lang="fi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sam</title>
+
+    <!-- Oma CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: black;
+            color: rgb(92, 241, 5);
         }
-        * {
-      color: rgb(92, 241, 5);
-    }
-    h1 { text-align: center;}
-    h1 {
-      font-size: 4em; padding-bottom: 10%;
-    }
-
-    .transition-button {
-        background-color: rgb(238, 241, 6);
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-       position: absolute;
-       top: 50%;
-       left: 70%;
-        align-items: center;
-        transition: background-color 0.3s ease;
-    
-      }
-      
-      .transition-button:hover {
-        background-color: rgb(4, 235, 16);
-       }
-
-      .animation-box {
-        position: absolute;
-        top: 50%;
-        left: 70%;
-        width: 50px;
-        height: 50px;
-        background-color: rgb(238, 241, 6);
-        position: relative;
-        animation: move 2s infinite alternate;
-      }
-      
-      @keyframes move {
-        from {
-          left: 0;
-        }
-        to {
-          left: 100px;
-        }
-      }
-
-      .pseudo-list li:nth-child(odd) {
-        background-color: rgb(227, 243, 7);
-      }
-      
-      .pseudo-list li:nth-child(even) {
-        background-color: rgb(3, 7, 238);
-      }
-      .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
-
-      .quote {
-        position: relative;
-        padding-left: 20px;
-        font-style: italic;
-      }
-
-      
-      
-      .quote::before {
-        content: '“';
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: lightgray;
-      }
-
-      .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-   max-width: 12px;
-  margin: 50px auto;
-}
-
-.grid-item {
-  background-color: rgb(235, 252, 6);
-  padding: 20px;
-  text-align: center;
-}
-
-.grid-wrapper {
-  max-width: 1200px;
-  margin: 500px auto;  /* keskittää vain gridin */
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.box {
-  background-color: rgb(241, 218, 8);
-  padding: 20px;
-  text-align: center;
-}
-
-.responsive-box {
-  padding: 20px;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .responsive-box {
-    background-color: rgb(13, 126, 231);
-  }
-}
-
-@media (min-width: 601px) {
-  .responsive-box {
-    background-color: rgb(201, 40, 179);
-  }
-}
-
-.responsive-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .column {
-      flex: 1;
-      padding: 10px;
-    }
-    
-    @media (max-width: 600px) {
-      .column {
-        flex: 100%;
-      }
-    }
-
-    .responsive-image {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .media-query-box {
-      padding: 20px;
-      text-align: center;
-    }
-    
-    @media (max-width: 600px) {
-      .media-query-box {
-        background-color: lightcoral;
-      }
-    }
-    
-    @media (min-width: 601px) {
-      .media-query-box {
-        background-color: lightblue;
-      }
-    }
-
-    .responsive-nav .nav-list {
-      display: flex;
-      list-style: none;
-    }
-    
-    @media (max-width: 600px) {
-      .responsive-nav .nav-list {
-        display: none;
-      }
-    
-      .responsive-nav .menu-toggle {
-        display: block;
-      }
-    }
 
     </style>
-    </head>
-    
-    <body>
 
-      <nav class="responsive-nav">
-      <button class="menu-toggle">☰ Menu</button>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+</head>
+
+</div>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12">Column 1</div>
+    <div class="col-md-4 col-12">Column 2</div>
+    <div class="col-md-4 col-12">Column 3</div>
+  </div>
+</div>
+
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Brand</a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="#">
+                           Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </nav>
 
-      <div class="responsive-container">
-      <div class="column">Column 1</div>
-      <div class="column">Column 2</div>
-    </div>
-        
-        <div class="marquee">
-            <span>Under Construction!!</span>
-        </div>
+    
 
-        <div class="construction-bar top-bar"></div>
-
-        <div class="construction-bar bottom-bar"></div>
-
-        <div class="media-query-box">Resize the window to see the effect</div>
-
-        
-        
-      <div class="flex-container">                      <div class="box">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box">Box 3</div>
-        </div>
-        
-      <div class="main">
-
-        <div class="grid-wrapper"></div>
-        <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        </div>
-
-        <div class="responsive-box">Resize the window to see the effect</div>
-        
         <header>
-        <h1 style="background-color: rgb(238, 241, 6);"
-            style="color: black;">Tervetuloa nettisivuilleni!
-        </h1>
-        <nav>
-            <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-     </nav>
-</header>
+            <h1>Tervetuloa nettisivuilleni!</h1>
+        </header>
 
-<main>
-  <section id="about">
-    <h2>About Me:</h2>
-    <h2>Student of Laurea university of applied sciences</h2>
-    <p>Tervetuloa nettisivuilleni!</p>
-    <p style="margin-right: 0%;"> I'm learning HTML, CSS and Javascript. Updating this website as I progress.</p>
-  </section>
-</main>
+        <main>
 
-<footer>
-  <p>Copyright 2025</p>
-</footer>
-        <a href="https://www.laurea.fi">Laurea AMK</a>
+            <section id="about">
+
+                <h2>About Me:</h2>
+
+                <h2>
+                    Student of Laurea university of applied sciences
+                </h2>
+
+                <p>
+                    I'm learning HTML, CSS and Javascript.
+                    Updating this website as I progress.
+                </p>
+
+            </section>
+
+        </main>
+
         
-        <table>
-            
-            <tr>
-                <th>Yksi</th>
-                <th>Kaksi</th>
-            </tr>
-            <tr>
-                <td>Yksi</td>
-                <td>Kaksi</td>
-            </tr>
-            <tr>
-                <td>Yksi</td>
-                <td>Kaksi</td>
-                
-            </tr>
-        </table>
 
-        <img src="\images\pommi.jpg" alt="Responsive Image" class="responsive-image">
+        <img src="images/kuvamina.JPEG"
+             alt="Photo of Samuli Merenlaakso"
+             width="200"
+             style="filter: sepia(100%);">
 
-        <img src="./images/pommilei.png" alt="Sample Image" class="filter-image" width="200"; style="background-color: black;">
-        
-        <img src="images/kuvamina.JPEG" alt="Photo of Samuli Merenlaakso" width="200" style="filter: sepia(100%);">
-        
-    </body>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+  <img src="images/suami.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <a href="https://areena.yle.fi/podcastit/ohjelmat/57-3gO4bl7J6" class="btn btn-primary">Älä paina!</a>
+  </div>
+
+  <div class="alert alert-danger" role="alert">
+  Varo!
+</div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
